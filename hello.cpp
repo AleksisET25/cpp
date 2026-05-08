@@ -5,9 +5,6 @@ using namespace std;
 
 int main() {
 
-    string name;
-    cout << "DESTINATION: ";
-    cin >> name;
 
     for (int i = 1; i < 51; i++) 
     {
@@ -27,9 +24,7 @@ int main() {
             system("clear");
         }
     }
-    cout << "NUKE SENT SUCCESSFULLY TO [" << name << "]!" << endl;
-
-    
+    cout << "DELETED ALL FILES SUCCESSFUL" << endl;
     
     return 0;
 }
