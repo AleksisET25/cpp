@@ -2,7 +2,8 @@
 
 using namespace std;
 
-int main() {
+int main() 
+{
     cout << "CHATGPT: How may i assist you?" << endl;
     string cmnd;
     cin >> cmnd;
