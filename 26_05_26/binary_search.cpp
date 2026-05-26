@@ -38,22 +38,28 @@ int main() {
     cout << "n:";
     cin >> n;
 
-    int currentIndex;
+    int current_index;
+    int last_index;
 
     while(true) {
-        currentIndex = (a+b+1)/2;
-        if(list[currentIndex] == n) {
-            index = currentIndex;
+        current_index = (a+b+1)/2;
+        if(list[current_index] == n) {
+            index = current_index;
+            cout << n << " is at index " << index << ":" << list[index] << endl;
             break;
         } else {
-            if(list[currentIndex] > n) {
-                b = currentIndex;
-            } else if(list[currentIndex] < n) {
-                a = currentIndex;
+            temp = current_index;
+            if(list[current_index] > n) {
+                b = current_index;
+            } else if(list[current_index] < n) {
+                a = current_index;
             }
+        }
+        if(current_index == temp) {
+            cout << "nav" << endl;
+            break;
         }
     }
 
-    cout << n << " is at index " << index << ":" << list[index] << endl;
 
 }
