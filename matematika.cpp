@@ -12,6 +12,12 @@ int main() {
     cout << "y: ";
     cin >> y;
 
+    while(y==0) {
+        cout << "y nevar but 0" << endl;
+        cout << "y: ";
+        cin >> y;
+    }
+
     double result = (x+10) / (3*y);
 
     cout << "result: " << result << endl;
